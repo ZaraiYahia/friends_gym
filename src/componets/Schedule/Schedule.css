@@ -1,0 +1,44 @@
+.app__schedule-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+.app__schedule-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.app__schedule--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.app__schedule-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  transition: all 0.8s ease-out;
+  margin-top: 20px;
+}
+.app__schedule-header h2 {
+  margin-left: 20px;
+}
+.addevent-btn {
+  margin-right: 50px;
+  font-size: 45px;
+  cursor: pointer;
+  color: var(--clr-primary-6);
+  transition: var(--transition);
+}
+.addevent-btn:hover {
+  transform: rotate(90deg);
+}

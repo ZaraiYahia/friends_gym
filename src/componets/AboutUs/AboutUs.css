@@ -1,0 +1,31 @@
+.app__aboutus-continer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  max-width: 100%;
+}
+
+.app__aboutus-content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.app__aboutus-header {
+  padding-left: 20px;
+  padding-top: 4rem;
+  max-width: 350px;
+  cursor: context-menu;
+}
+.app__aboutus-anidea {
+  padding: 50px auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: context-menu;
+}
+
+@media screen and (max-width: 500) {
+  .app__aboutus-header {
+    width: 100px;
+  }
+}

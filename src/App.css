@@ -1,0 +1,29 @@
+body,
+button {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+@supports (scrollbar-color: var(--clr-black) var(--clr-white)) {
+  * {
+    scrollbar-color: var(--clr-black) var(--clr-white);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+}
+
+select:focus,
+textarea {
+  outline: none !important;
+}
+/*.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 450px;
+  margin: auto;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}*/

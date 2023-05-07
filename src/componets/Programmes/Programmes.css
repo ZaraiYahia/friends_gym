@@ -1,0 +1,88 @@
+.app__programmes-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.app__programmes-contient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app__programmes_content-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.app__programmes_content-header h2 {
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+
+/*
+  =============== 
+  app__singleprogramme-containers
+  ===============
+  */
+
+.app__singleprogramme-container {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-grey-special);
+  margin: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+.app__singleprogramme-container h4 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.app__singleprogramme-container p {
+  color: var(--clr-white);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.app__singleprogramme-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__singleprogramme-container header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.show-btn {
+  background-color: var(--clr-white);
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--clr-black);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+.app__programmes_content-body {
+  height: 700px;
+}
+
+.addprogramme-btn {
+  margin-right: 50px;
+  font-size: 45px;
+  cursor: pointer;
+  color: var(--clr-primary-6);
+  transition: var(--transition);
+}
+.addprogramme-btn:hover {
+  transform: rotate(90deg);
+}

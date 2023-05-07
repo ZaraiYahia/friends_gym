@@ -1,0 +1,54 @@
+.app__editform-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+}
+.app__editform-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 60vw;
+  background-color: var(--clr-black);
+  border-radius: 25px;
+}
+.app__editform-compenent {
+  height: 400px;
+}
+
+.app__editform-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 100px;
+  height: 60px;
+}
+.style-btn {
+  width: 125px;
+  height: 35px;
+  background: var(--clr-white);
+  color: var(--clr-black);
+  border: var(--clr-white);
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: var(--white-shadow);
+  transition: transform 125ms ease-in;
+  text-transform: uppercase;
+}
+.style-btn:hover,
+.style-btn:focus-visible {
+  transform: scale(1.1);
+}
+input:focus,
+textarea {
+  outline: none !important;
+}

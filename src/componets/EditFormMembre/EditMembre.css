@@ -1,0 +1,148 @@
+.app__popup_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+}
+.app__popup_content {
+  width: 60vw;
+  height: 450px;
+  background-color: var(--clr-black);
+  border-radius: 25px;
+}
+
+.app__editmembre_content-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  cursor: context-menu;
+  color: #fff;
+  margin-top: 10px;
+}
+.close-btn {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.app__editmembre_content-header h2 {
+  font-size: 20px;
+
+  word-spacing: 0.3rem;
+}
+h2 {
+  margin: 0;
+}
+.app__editmembre-row {
+  margin: 0px 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+.app__editmembre-col {
+  position: relative;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px 0px 30px;
+}
+.app__editmembre-col label {
+  font-size: 15px;
+
+  margin-bottom: 10px;
+  color: #fff;
+  word-spacing: 0.2rem;
+}
+.app__editmembre-col input {
+  height: 40px;
+  background-color: var(--clr-white);
+  border: var(--clr-black);
+  color: var(--clr-black);
+  padding: 8px;
+  transition: 0.3s ease-in;
+  font-size: 15px;
+}
+.app__editmembre-col select {
+  height: 40px;
+  padding: 8px;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border: var(--clr-black);
+  font-size: 15px;
+}
+.empty {
+  background-color: black;
+  border-radius: 50px 0px 0px 50px;
+}
+.empty1 {
+  background-color: #fff;
+  height: 60px;
+  margin: 20px 0px 20px 20px;
+  border-radius: 50px 0px 0px 50px;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  padding-right: 61px;
+}
+.confirm-btn {
+  width: 150px;
+  height: 50px;
+  margin: 0;
+  background-color: black;
+  border: 0;
+  color: var(--clr-white);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 125ms ease-in;
+}
+.confirm-btn:hover,
+.confirm-btn:focus-visible {
+  transform: scale(1.1);
+}
+.app__editmembre-col input:focus {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--clr-black);
+}
+.app__editmembre-col select:focus {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--clr-black);
+}
+
+.app__editmembre-col input,
+select {
+  transition: 0.3s;
+  animation: ease-out;
+}
+
+.style_btn {
+  width: 125px;
+  height: 35px;
+  background: var(--clr-white);
+  color: var(--clr-black);
+  border: var(--clr-white);
+  border-radius: 25px;
+  cursor: pointer;
+}
+.style_btnprev {
+  background: var(--clr-white);
+  color: var(--clr-black);
+  border: var(--clr-white);
+  border-radius: 25px;
+  width: 100px;
+  height: 25px;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

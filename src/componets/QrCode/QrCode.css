@@ -1,0 +1,81 @@
+.app__qrcode-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.app__qrcode-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 500px;
+  background-color: var(--clr-white);
+  border-radius: 25px;
+}
+
+.app__qrcode_content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  cursor: context-menu;
+  color: var(--clr-black);
+  margin-top: 10px;
+}
+.app__qrcode-content h2 {
+  font-size: 1.1rem;
+  color: var(--clr-black);
+  text-transform: uppercase;
+}
+.app__qrcode-col {
+  position: relative;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 40px;
+}
+
+.btn--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.confirm--btnn {
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  background-color: var(--clr-black);
+  border: 0;
+  color: var(--clr-white);
+  border-radius: 999px;
+  box-shadow: var(--light-shadow);
+  cursor: pointer;
+  transition: transform 125ms ease-in;
+}
+.confirm--btn:hover,
+.confirm--btn:focus-visible {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 950px) {
+  .app__qrcode-content {
+    width: 470px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .app__qrcode-content {
+    width: 420px;
+  }
+}
